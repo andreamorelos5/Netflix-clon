@@ -1,0 +1,318 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background: black;
+    font-family: 'Open Sans', sans-serif;
+    color:white;
+
+
+}
+
+.contenedor{
+    width: 98%;
+    margin:auto;
+    height: auto;
+    
+}
+
+
+nav {
+    width: 100%;
+    z-index: 9999;
+    background-color: black;
+    height: 18%;
+    display: flex;
+    align-items: flex-start;
+    margin-right: 0;
+}
+
+nav input{
+    background: transparent;
+    color:white;
+}
+header .logo{
+    width: 15%;
+    height: auto;
+    margin: 0;
+    margin: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+nav li {
+    margin: 30px;
+
+}
+
+.nav-img{
+    width: 30px;
+    height: auto;
+    margin-top: 25px;
+
+}
+#flecha{
+    width: 1em;
+    background-color: black;
+}
+
+.búsqueda {
+    width: 20%;
+    display: flex;
+    align-items: flex-start;
+    margin: 30px;
+}
+
+#lupa{
+    width: 30px;
+    height: auto;
+    margin-top: -5px;
+}
+
+.niños{
+    margin-top: 35px;
+    margin-left: -20px;
+    color: #AAA;
+    text-decoration: none;
+}
+
+header ul .menu{
+    color: #AAA;
+    text-decoration: none;
+    margin-right: 20px;
+
+}
+
+header  ul .menu:hover{
+    color:white;
+}
+
+
+/*Películas principales*/
+
+.pelicula-principal{
+    font-size: 16px;
+    min-height: 40.62em;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, .30) 0%, rgba(0, 0, 0, .30) 70%), url(https://holatelcel.com/wp-content/uploads/2020/08/shrek-nueva-pelicula--1280x720.png);
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: end;
+
+}
+.pelicula-principal .contenedor{
+    margin:0 auto;
+    margin-bottom: 6.25em;
+
+}
+
+.pelicula-principal .carrusel{
+    gap: 0;
+}
+
+.pelicula-principal .titulo{
+    font-weight: 600;
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+}
+.pelicula-principal .descripcion{
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 1.25em;
+
+}
+
+.pelicula-principal .boton{
+    background: rgba(0,0,0, 0.5);
+    border:none;
+    border-radius: 0.31em;
+    padding: 0.93em, 1.87em;
+    color:white;
+    margin-right: 1.25em;
+    cursor:pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+    height: 3em;
+    width: 200px;
+}
+.pelicula-principal .boton:hover{
+    background: white;
+    color: black;
+}
+
+.pelicula-principal .boton i{
+    margin-right: 1.25em;
+}
+
+/*Contenedor titulo y controles*/
+
+.contenedor-titulo-controles{
+    display:flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.contenedor-titulo-controles h3{
+    color:white;
+    font-size:  20px;
+}
+
+/*Contenedor principal y flechas*/
+.peliculas-fila{
+    margin-bottom: 70px;
+
+}
+
+.peliculas-fila .contenedor-principal{
+    display:flex;
+    align-items: center;
+    position: relative;
+
+}
+.peliculas-fila .contenedor-principal .flecha-izquierda,
+.peliculas-fila .contenedor-principal .flecha-derecha{
+    position: absolute;
+    border: none;
+    background: rgba(0, 0, 0, .3);
+    font-size: 40px;
+    height: 50%;
+    top: calc(50% - 25%);
+    line-height: 40px;
+    width: 50px;
+    color: white;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+}
+.peliculas-fila .contenedor-principal .flecha-izquierda{
+    left: 0;
+}
+.peliculas-fila .contenedor-principal .flecha-derecha{
+    right: 0;
+}
+.peliculas-fila .contenedor-principal .flecha-izquierda:hover,
+.peliculas-fila .contenedor-principal .flecha-derecha:hover{
+    background: rgba(0, 0, 0, .9);
+}
+
+/*Carrusel*/
+.peliculas-fila .contenedor-carrusel{
+    width: 100%;
+    padding: 20px 0px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.peliculas-fila .contenedor-carrusel .carrusel{
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.peliculas-fila .contenedor-carrusel .carrusel .pelicula{
+    min-width: 20%;
+    padding: 3px;
+    transition: .3s ease all;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+}
+
+.peliculas-fila .contenedor-carrusel .carrusel .pelicula:hover{
+    transform: scale(1.2);
+    transform-origin: center;
+    z-index: 9999;
+}
+.peliculas-fila .contenedor-carrusel .carrusel .pelicula img{
+    width: 100%;
+    vertical-align: top;
+}
+footer{
+    width: 100%;
+    background-color: black;
+    height: 30%;
+}
+.redes{
+    margin-left: 10%;
+    align-content: center;
+
+}
+.redes a{
+    display: inline-block;
+    align-content: center;
+    text-decoration: none;
+    width: 2em;
+    font-size: 1em;
+    color: white;
+    margin-left: 0;
+    padding-left: 0;
+}
+.pie{
+    display:grid;
+    width: 80%;
+    align-items: center;
+    margin:auto;
+    font-size: smaller;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    padding:45px 0px;
+    color:rgba(141, 141, 141, 0.911);
+    z-index: 99;
+}
+.pie .box p{
+    margin: 0.9em;
+}
+
+@media screen and (max-width:800px){
+    header .logo{
+        width: 25%;
+        padding: 0;
+        align-self: center;
+
+    }
+    header nav{
+        flex-direction: column;
+        text-align: center;
+        align-content: space-between;
+    }
+    .búsqueda,
+    .niños,
+    .nav-img{
+        display: none;
+    }
+
+    .pelicula-principal{
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .pelicula-principal .descripcion{
+        max-width: 100%;
+    }
+
+    .peliculas-fila .contenedor-carrusel{
+        overflow: visible;
+    }
+    .peliculas-fila .contenedor-carrusel .carrusel{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:20px;
+
+    }
+
+    .peliculas-fila .flecha-derecha,
+    .peliculas-fila .flecha-izquierda{
+        display: none;
+    }
+}
